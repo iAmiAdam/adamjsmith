@@ -11,22 +11,16 @@
 <?php
 
 $navArgs = array(
-	'theme_location'  => 'navbar',
-	'menu'            => '',
-	'container'       => '',
-	'container_class' => '',
-	'container_id'    => '',
-	'menu_class'      => 'nav',
-	'menu_id'         => '',
+	'theme_location'  => 'primary',
+	'menu'            => 'primary',
+	'container'       => 'div',
+	'container_class' => 'collapse navbar-collapse',
+	'container_id'    => 'bs-example-navbar-collapse-1',
+	'menu_class'      => 'nav navbar-nav',
 	'echo'            => true,
-	'fallback_cb'     => 'wp_page_menu',
-	'before'          => '',
-	'after'           => '',
-	'link_before'     => '<li>',
-	'link_after'      => '</li>',
-	'items_wrap'      => '',
+	'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
 	'depth'           => 0,
-	'walker'          => ''
+	'walker'          => new wp_bootstrap_navwalker()
 );
 
 ?>
@@ -40,14 +34,14 @@ $navArgs = array(
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
-	<?php wp_head(); ?>
+	<?php //wp_head(); ?>
 </head>
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-inverse">
 	<div class="navbar-inner">
-		<div class="container">
+		<div class="col-md-6 col-md-offset-3">
 			<div id="logo">Adam Smith</div>
-			<?php wp_nav_menu( array('menu_class' => 'nav', 'container' => 'false', 'menu_id' => 'nav',  'walker' =>  new T5_Nav_Menu_Walker_Simple) ); ?>
-		
+			<?php wp_nav_menu( $navArgs ); ?>
+		</div>
 	</div>
 </header>
 <body>

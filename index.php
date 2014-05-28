@@ -16,17 +16,21 @@ $args = array(
 );
 $pages = get_pages($args);
 //start loop
+
 foreach ($pages as $page_data) {
-    $content = apply_filters('the_content', $page_data->post_content);
-    $title = $page_data->post_title;
+  	$content = apply_filters('the_content', $page_data->post_content);
+	$title = $page_data->post_title;
     $slug = $page_data->post_name;
 ?>
-<div class='<?php echo "$slug" ?>'>
-        <h2><?php echo "$title" ?></h2>
+<div class="col-md-6 col-md-offset-3">
+	<div class='<?php echo "$slug" ?>'>
+       	<h2><?php echo "$title" ?></h2>
 			<?php echo "$content" ?>
+	</div>
 </div>
 
 <?php
 }
+
 get_footer();
 ?>

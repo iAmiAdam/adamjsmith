@@ -9,9 +9,7 @@ Version: 0.1
 
 /* Miscellaneous */
 
-body {
-	padding-top: 60px;
-}
+
 
 
 /* header */
@@ -32,6 +30,11 @@ body {
  	}
  }
 
-  {
- 	
- }
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
