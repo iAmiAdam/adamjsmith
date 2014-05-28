@@ -5,6 +5,7 @@ Author URI: http://adamjsmith.info
 Description: Personal OnePager type theme
 Version: 0.1
 */
+@import url("assets/css/bootstrap.min.css");
 
 /* Miscellaneous */
 
@@ -29,4 +30,8 @@ body {
  		color: #fff;
  		text-decoration: none;
  	}
+ }
+
+  {
+ 	
  }
