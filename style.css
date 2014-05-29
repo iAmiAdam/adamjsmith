@@ -13,14 +13,12 @@ body {
 	background: #eaeaea;
 }
 
-.btn .glyphicon {
-	vertical-align: middle;
-	margin-top: 0px;
+.btn .glyphicon, .fa {
 	margin-right: 8px;
 }
 
-.btn.btn-icon .glyphicon {
-	margin-right: 0;
+.col-centered {
+	margin: 0 auto;
 }
 
 /* typography */
@@ -89,6 +87,7 @@ p {
 	margin-bottom: 15px;
 }
 
-.page h2 {
-	margin-left: 10px;
+#contact-buttons {
+	margin: 0 auto;
+	margin-bottom: 15px;
 }
