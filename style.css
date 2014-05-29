@@ -91,3 +91,17 @@ p {
 	margin: 0 auto;
 	margin-bottom: 15px;
 }
+
+/* images */
+
+.img-thumbnail {
+	filter: url(assets/filters/filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    margin-bottom: 15px;
+}
+
+.img-thumbnail:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
