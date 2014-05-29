@@ -22,8 +22,8 @@ foreach ($pages as $page_data) {
 	$title = $page_data->post_title;
     $slug = $page_data->post_name;
 ?>
-<div class="col-md-6 col-md-offset-3">
-	<div class='<?php echo "$slug" ?>'>
+<div class="col-md-4 col-md-offset-4">
+	<div class='page'>
        	<h2><?php echo "$title" ?></h2>
 			<?php echo "$content" ?>
 	</div>
