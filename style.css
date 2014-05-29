@@ -13,12 +13,25 @@ body {
 	background: #eaeaea;
 }
 
+.btn {
+	margin: 5px;
+}
+
 .btn .glyphicon, .fa {
 	margin-right: 8px;
 }
 
+.row-centered {
+	text-align:center;
+}
+
 .col-centered {
-	margin: 0 auto;
+	display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 /* typography */
@@ -88,7 +101,6 @@ p {
 }
 
 #contact-buttons {
-	margin: 0 auto;
 	margin-bottom: 15px;
 }
 
